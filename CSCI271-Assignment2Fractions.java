@@ -37,14 +37,15 @@ public class CSCI271-Assignment2Fractions
     }
   public Fraction negate(Fraction a , Fraction b )
     {
-      return (a/b) * (b/a);
+      return |a/b| ;
     }
       public Fraction pow(Fraction a , Fraction b ){
       return 1 ;
     }
     public String toString(){
       if (a==b)
-      { return "1";}
+      { return "1";
+      }
       else if (b == 0)
       {
         return "Not a number. Cannot be +infintiy symbol, -infinity symbol, or 0 which is not a number"; 
@@ -53,6 +54,7 @@ public class CSCI271-Assignment2Fractions
       {
         return fraction f;
       }
+    else {return "There was an error ";}
       System.out.println();
     }
     public Fraction divide(Fraction f )
