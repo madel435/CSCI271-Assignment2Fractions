@@ -4,7 +4,9 @@ public class CSCI271-Assignment2Fractions
     {
       private long numerator; 
       private long denominator;
+      public long f; 
     }
+    
     public Fraction(long numerator, long denominator)
     {
       return 1;
@@ -16,7 +18,7 @@ public class CSCI271-Assignment2Fractions
     }
   public long Getnum()
     {
-      return 1;
+      return ;
     }
   public long Getdenom()
     {
@@ -93,8 +95,7 @@ public ExampleClass plusTen()
 public static void main (String[] args)
 {
 int results = add(3,4);
-//Method call 
-System.out.println(result);
+System.out.println(f);
 }
 }
 }
