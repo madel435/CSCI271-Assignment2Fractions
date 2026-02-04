@@ -5,7 +5,7 @@
       private long denominator;
       public reducedFraction; 
         
-    }
+    
  if (a==b)
       { String fractionOut = "";
        return fractionOut; 
@@ -31,7 +31,7 @@
         }
 
 
-
+}
 
 
 
