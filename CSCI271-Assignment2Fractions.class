@@ -1,32 +1,7 @@
 
-public class CSCI271-Assignment2Fractions 
+public static void main(String[] args)
 {
-  private int num;
-}
+  int results = add(3,4);
 
-public CSCI271-Assignment2Fractions(int n)
-{
-  this.num =n;
-
-}
-
-public void getInt() //extracts info
-{
-  return n;
-}
-
-public static int add(int a, int b )
-{
-  return a + b;
-}
-
-public ExampleClass plusTen()
-{
-  return new ExampleClass (add(num,10));
-}
-public static void main (String[] args)
-{
-int results = add(3,4);
-//Method call 
-System.out.println(result);
+System.out.println(results);
 }
