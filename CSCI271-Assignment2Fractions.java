@@ -4,13 +4,53 @@ public class CSCI271-Assignment2Fractions
     {
       private long numerator; 
       private long denominator;
-      public long f; 
+      public reducedFraction; 
+        
     }
+ if (a==b)
+      { String fractionOut = "";
+       return fractionOut; 
+       
+      }
+      else if (b == 0 || a == 0)
+      {
+        return "Not a number. This is either +infintiy symbol, -infinity symbol, or 0 which is not a number"; 
+      }
+      else if 
+      {
+        return fraction f;
+      }
+    else {return "There was an error ";}
+      System.out.println();
+    }
+ public ReduceFraction()
+        {   long tempVar = Long.signum(a) * Long.signum(b);
+            Math.abs(a);
+            Math.abs(b);
+            reducedFraction = a / gcb(a,b) * gcb(a,b) / b; 
+            reducedFraction = Long.signum(tempVar)* Long.signum(reducedFraction);  
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     public Fraction(long numerator, long denominator)
     {
       return 1;
     } 
+   
     public Fraction(int n)
     {
       numerator = num;
@@ -48,22 +88,7 @@ public class CSCI271-Assignment2Fractions
       }
     }
     public String toString(){
-      if (a==b)
-      { String fractionOut = "";
-       return fractionOut; 
-       
-      }
-      else if (b == 0)
-      {
-        return "Not a number. Cannot be +infintiy symbol, -infinity symbol, or 0 which is not a number"; 
-      }
-      else if 
-      {
-        return fraction f;
-      }
-    else {return "There was an error ";}
-      System.out.println();
-    }
+     
     public Fraction divide(Fraction f )
     {
       //Only works if data field is public 
