@@ -1,7 +1,6 @@
-public class CSCI271-Assignment2Fractions 
-{
+
     public class Fraction
-    {
+        {
       private long numerator; 
       private long denominator;
       public reducedFraction; 
