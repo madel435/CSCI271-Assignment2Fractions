@@ -1,42 +1,43 @@
-
-    public class Fraction
-        {
-      private long numerator; 
-      private long denominator;
-      public reducedFraction; 
-        
+public class Fraction
+{
+   private long numerator; 
+   private long denominator;
     
- if (a==b)
-      { String fractionOut = "";
-       return fractionOut; 
-       
-      }
-      else if (b == 0 || a == 0)
-      {
-        return "Not a number. This is either +infintiy symbol, -infinity symbol, or 0 which is not a number"; 
-      }
-      else if 
-      {
-        return fraction f;
-      }
-    else {return "There was an error ";}
-      System.out.println();
-    }
- public ReduceFraction()
-        {   long tempVar = Long.signum(a) * Long.signum(b);
-            Math.abs(a);
-            Math.abs(b);
-            reducedFraction = a / gcb(a,b) * gcb(a,b) / b; 
-            reducedFraction = Long.signum(tempVar)* Long.signum(reducedFraction);  
+   public Fraction(long numerator,long denominator)
+    {
+
+        if (denominator == 0)
+       {
+         System.out.println("Not a number. Denominator cannot be 0"); 
+       }
+                
+        else if ( numerator == 0 )
+        {
+         System.out.println("Not a number. Denominator cannot be 0"); 
         }
-
-
-}
-
-
-
-
-
+            
+        else if (numerator == denomiator)
+      { 
+           this.numerator = 1;
+           this.denominator = 1;  
+      }
+      
+         else
+      {
+                long reducedFraction;
+                long tempVar = Long.signum(numerator) * Long.signum(denominator);
+                Math.abs(numerator);
+                Math.abs(denominator);
+                reducedFraction = numerator / gcb(numerator,demominator) * gcb(numerator,denominator) / denominator; 
+                reducedFraction = Long.signum(tempVar) * Long.signum(reducedFraction);  
+             
+          
+          public String toString()
+          {
+             String fractionOut = "";
+             return fractionOut; 
+        
+        }
 
 
 
@@ -57,7 +58,7 @@
     }
   public long Getnum()
     {
-      return ;
+      
     }
   public long Getdenom()
     {
@@ -70,7 +71,7 @@
   
   public Fraction multiply(Fraction a , Fraction b )
     {
-      return a * b;
+      return numerator * numeator;
     }
   public Fraction divide(Fraction a , Fraction b )
     {
@@ -86,8 +87,7 @@
           a*=a;
       }
     }
-    public String toString(){
-     
+ 
     public Fraction divide(Fraction f )
     {
       //Only works if data field is public 
@@ -106,12 +106,12 @@ public CSCI271-Assignment2Fractions(int n)
 
 public void getInt() //extracts info
 {
-  return n;
+
 }
 
-public static int add(int a, int b )
+public static int add(long numerator,long denominator)
 {
-  return a + b;
+  return new Fraction numerator + denominator; 
 }
 
 public ExampleClass plusTen()
