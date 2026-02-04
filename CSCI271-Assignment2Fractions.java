@@ -1,5 +1,25 @@
 public class CSCI271-Assignment2Fractions {
+  public class Fraction
+  {
+    private long numerator; 
+    private long denominator;
+    
+  }
+public Fraction(long numerator, long denominator)
+{
+  
+} 
+  public Fraction(int n){
+    numerator = num;
+    denominator = 1; 
+  }
+  public long Getnum(){
+    
+  }
+  public long Getdenom(){
 
+    
+  }
   public Fraction add(Fraction a , Fraction b )
   {
     return a + b;
