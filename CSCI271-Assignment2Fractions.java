@@ -49,7 +49,9 @@ public class CSCI271-Assignment2Fractions
     }
     public String toString(){
       if (a==b)
-      { return "1";
+      { String fractionOut = "";
+       return fractionOut; 
+       
       }
       else if (b == 0)
       {
