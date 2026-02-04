@@ -24,7 +24,7 @@ public class CSCI271-Assignment2Fractions
     }
   public Fraction add(Fraction a , Fraction b )
     {
-      return a + b;
+      return a * b;
     }
   
   public Fraction multiply(Fraction a , Fraction b )
@@ -40,7 +40,10 @@ public class CSCI271-Assignment2Fractions
       return |a/b| ;
     }
       public Fraction pow(Fraction a , Fraction b ){
-      return 1 ;
+      for (int i = 1; i <= b ;i++ )
+      {
+          a*=a;
+      }
     }
     public String toString(){
       if (a==b)
