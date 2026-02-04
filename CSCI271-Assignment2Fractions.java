@@ -65,5 +65,36 @@ public class CSCI271-Assignment2Fractions
       //Only works if data field is public 
       return new Fraction (*/Logic using Getters*/);
     }
+public class CSCI271-Assignment2Fractions 
+{
+  private int num;
+}
+
+public CSCI271-Assignment2Fractions(int n)
+{
+  this.num =n;
+
+}
+
+public void getInt() //extracts info
+{
+  return n;
+}
+
+public static int add(int a, int b )
+{
+  return a + b;
+}
+
+public ExampleClass plusTen()
+{
+  return new ExampleClass (add(num,10));
+}
+public static void main (String[] args)
+{
+int results = add(3,4);
+//Method call 
+System.out.println(result);
+}
 }
 }
