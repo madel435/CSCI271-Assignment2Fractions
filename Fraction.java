@@ -46,13 +46,13 @@ public class Fraction
              {
                 return "+ Infinity";
              }
-             else if ((this.denominator) && (this.numerator < 0))
+             else if ((this.denominator == 0) && (this.numerator < 0))
              {
                 return "- Infinity";
              }
              else if (this.denominator == 0)
              {
-                return numerator ; 
+                return Long.toString(numerator) ; 
              }
              else 
              {
