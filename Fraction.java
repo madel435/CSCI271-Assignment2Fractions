@@ -135,44 +135,23 @@ public class Fraction
    public static void main(String[] args)
    {
       int i = 7;
-      while ( i > 0)
+     For (int i = 1; i < 2; i++)
       {
+         Fraction F1 = new Fraction(3,4);
+         Fraction F2 = new Fraction(5,10);
+         Fraction F3 = new Fraction(0,9);
+         Fraction F4 = new Fraction(4,0);
+         Fraction F5 = new Fraction(6,9);
+         Fraction F6 = new Fraction(10,20);
          
-         int results = add(3,4);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
-      
-         int results = add(0,0);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
-  
-         int results = add(0,9);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
-      
-         int results = add(9,0);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
-      
-         int results = add(5,9);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
-      
-         int results = add(200/100);
-         getNum();
-         getDenom();
-         System.out.println(new Function(results);
-         i--;
+         System.out.println(F1.toString);
+         System.out.println(F2.toString);
+         System.out.println(F3.toString);
+         System.out.println(F4.toString);
+         System.out.println(F5.toString);
+         System.out.println(F6.toString);
+
+        
       }
    }
 }
