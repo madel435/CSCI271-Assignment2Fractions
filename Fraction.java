@@ -71,7 +71,7 @@ public class Fraction
 
     }
    
-    public Fraction(int n)
+    public Fraction(int num)
     {
       numerator = num;
       denominator = 1; 
