@@ -143,12 +143,12 @@ public class Fraction
          Fraction F5 = new Fraction(6,9);
          Fraction F6 = new Fraction(10,20);
          
-         System.out.println(F1.toString);
-         System.out.println(F2.toString);
-         System.out.println(F3.toString);
-         System.out.println(F4.toString);
-         System.out.println(F5.toString);
-         System.out.println(F6.toString);
+         System.out.println(F1.toString());
+         System.out.println(F2.toString());
+         System.out.println(F3.toString());
+         System.out.println(F4.toString());
+         System.out.println(F5.toString());
+         System.out.println(F6.toString());
 
         
       }
