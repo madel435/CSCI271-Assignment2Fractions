@@ -3,7 +3,7 @@ public class Fraction
    private long numerator; 
    private long denominator;
 
-   public long gcd( this.numerator , this.denominator )
+   public long gcd(numerator,denominator )
       {
          long remainder;
          
@@ -82,6 +82,6 @@ public class Fraction
              {
                 return numerator + "/" + denominator; 
              }
-        
+          }
           }
    
