@@ -52,8 +52,8 @@ public class Fraction
       {
                 long reducedFraction;
                 long tempVar = Long.signum(this.numerator) * Long.signum(this.denominator);
-                this.numerator = Math.abs(this.numerator);
-                this.denominator = Math.abs(this.denominator);
+                this.numerator = Math.abs(numerator);
+                this.denominator = Math.abs(denominator);
                 this.numerator = this.numerator / gcd(numerator,denominator);
                 this.denominator = this.denominator /gcd(numerator,denominator) ; 
          
