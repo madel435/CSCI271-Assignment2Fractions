@@ -3,7 +3,7 @@ public class Fraction
    private long numerator; 
    private long denominator;
 
-   public long gcd(numerator,denominator )
+   public long gcd(numerator,denominator)
       {
          long remainder;
          
