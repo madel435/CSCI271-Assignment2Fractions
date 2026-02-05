@@ -30,8 +30,8 @@ public class Fraction
                 long tempVar = Long.signum(this.numerator) * Long.signum(this.denominator);
                 this.numerator = Math.abs(this.numerator);
                 this.denominator = Math.abs(this.denominator);
-                this.numerator = this.numerator / gcd(this.numerator,this.denominator);
-                this.denominator = this.denominator /gcd(this.numerator,this.denominator) ; 
+                this.numerator = this.numerator / gcd(numerator,denominator);
+                this.denominator = this.denominator /gcd(numerator,denominator) ; 
          
                 this.numerator *= Long.signum(tempVar) ;    
         }
