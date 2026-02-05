@@ -3,28 +3,28 @@ public class Fraction
    private long numerator; 
    private long denominator;
 
-   gcd(numerator,denominator)
+   public long gcd(long num,long denom)
       {
          long remainder;
          
-         if ( this.numerator < 0 )
+         if ( num < 0 )
             {
-            this.numerator = -this.numerator; // to avoid sign problems
+            num = -num; // to avoid sign problems
             }
          
-         while (this.denominator != 0)
+         while (denom != 0)
          {
-            remainder = this.numerator % this.denominator;
-            this.numerator = this.denominator;
-            this.denominator = remainder;
+            remainder = num % denom;
+            num = denom;
+            denom = remainder;
                
-            if (this.numerator == 0)
+            if (num == 0)
                {
-               this.numerator = 1;
+                num = 1;
                }
          }
          
-         return this.numerator;
+         return num;
       }
       
    public Fraction(long numerator,long denominator)
