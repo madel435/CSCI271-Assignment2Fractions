@@ -134,7 +134,7 @@ public class Fraction
    public static void main(String[] args)
    {
       int i = 0;
-     For ( i = 1; i < b; i++)
+     For ( i = 1, i < b, i++)
       {
          Fraction F1 = new Fraction(3,4);
          Fraction F2 = new Fraction(5,10);
