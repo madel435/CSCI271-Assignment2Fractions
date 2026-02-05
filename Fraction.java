@@ -5,20 +5,22 @@ public class Fraction
 
    public long gcd( this.numerator , this.denominator )
       {
+         long remainder;
+         
          if ( this.numerator < 0 )
             {
-            then numerator = -numerator // to avoid sign problems
+            this.numerator = -this.numerator; // to avoid sign problems
             }
          
          while (this.denominator != 0)
          {
             remainder = this.numerator % this.denominator;
             this.numerator = this.denominator;
-            this.denominator = remainder
+            this.denominator = remainder;
                
             if (this.numerator == 0)
                {
-               this.numerator = 1
+               this.numerator = 1;
                }
          }
          
