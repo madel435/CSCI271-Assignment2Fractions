@@ -96,12 +96,45 @@ public class Fraction
    //Main function 
    public static void main(String[] args)
    {
-       System.out.println(new Function(3,4));
-       System.out.println(new Function(0,0));
-       System.out.println(new Function(0,9));
-       System.out.println(new Function(9,0));
-       System.out.println(new Function(4,8));
-       System.out.println(new Function(5,9));
-       System.out.println(new Function(200/100));
+      int i = 7
+      while ( i > 0)
+      {
+         
+         int results = add(3,4);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+      
+         int results = add(0,0);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+  
+         int results = add(0,9);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+      
+         int results = add(9,0);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+      
+         int results = add(5,9);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+      
+         int results = add(200/100);
+         getNum();
+         getDenom();
+         System.out.println(new Function(results);
+         i--;
+      }
    }
 }
