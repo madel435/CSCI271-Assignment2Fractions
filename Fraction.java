@@ -2,7 +2,16 @@ public class Fraction
 {
    private long numerator; 
    private long denominator;
-
+   
+   public long getNum()
+   {
+      return numerator;
+   }
+   public long getDenom()
+   {
+      return denominator;   
+   }
+   
    public long gcd(long num,long denom)
       {
          long remainder;
