@@ -133,7 +133,6 @@ public class Fraction
    //Main function 
    public static void main(String[] args)
    {
-      int i = 7;
      For (int i = 1; i < 2; i++)
       {
          Fraction F1 = new Fraction(3,4);
