@@ -8,12 +8,14 @@ public class Fraction
 
         if (denominator == 0)
        {
-         System.out.println("Not a number. Denominator cannot be 0"); 
+           this.numerator = Long.signum(numerator);
+           this.denominator = 0;  
        }
                 
         else if ( numerator == 0 )
         {
-         System.out.println("Not a number. Denominator cannot be 0"); 
+           this.numerator = Long.signum(numerator);
+           this.denominator = 1 ;  
         }
             
         else if (numerator == denomiator)
@@ -26,30 +28,30 @@ public class Fraction
       {
                 long reducedFraction;
                 long tempVar = Long.signum(numerator) * Long.signum(denominator);
-                Math.abs(numerator);
-                Math.abs(denominator);
-                reducedFraction = numerator / gcb(numerator,demominator) * gcb(numerator,denominator) / denominator; 
+                this.numerator = Math.abs(numerator);
+                this.denominator = Math.abs(denominator);
+                this.numerator = this.numerator / gcb(this.numerator,this.demominator);
+                this.denominator = this.denominator /gcb(this.numerator,this.denominator) ; 
          
-                reducedFraction = Long.signum(tempVar) * Long.signum(reducedFraction);  
+                this.numerator *= Long.signum(tempVar) ;  
                        
-          public String toString()
-          {
-             String fractionOut = "";
-             return fractionOut; 
-        
         }
 
+    }
+
+       //WRITE TWO STRING
+   public String toString()
+          {
+             String fractionOut = "";
+             if (this.)
+             else if ()
+             else ( 
+             return fractionOut; 
+        
+          }
 
 
 
-
-
-
-    
-    public Fraction(long numerator, long denominator)
-    {
-      return 1;
-    } 
    
     public Fraction(int n)
     {
@@ -81,6 +83,11 @@ public class Fraction
     {
       return |a/b| ;
     }
+   public Fraction Reciprocol()
+   {
+      return new Fraction (denominator, numerator); 
+   }
+   
       public Fraction pow(Fraction a , Fraction b ){
       for (int i = 1; i <= b ;i++ )
       {
@@ -89,39 +96,7 @@ public class Fraction
     }
  
     public Fraction divide(Fraction f )
-    {
-      //Only works if data field is public 
-      return new Fraction (*/Logic using Getters*/);
+    { 
+      return new Fraction ((this.numerator \ this.denominator ) * f.Reciprocol());
     }
-public class CSCI271-Assignment2Fractions 
-{
-  private int num;
-}
 
-public CSCI271-Assignment2Fractions(int n)
-{
-  this.num =n;
-
-}
-
-public void getInt() //extracts info
-{
-
-}
-
-public static int add(long numerator,long denominator)
-{
-  return new Fraction numerator + denominator; 
-}
-
-public ExampleClass plusTen()
-{
-  return new ExampleClass (add(num,10));
-}
-public static void main (String[] args)
-{
-int results = add(3,4);
-System.out.println(f);
-}
-}
-}
