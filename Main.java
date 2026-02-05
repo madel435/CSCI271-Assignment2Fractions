@@ -1,6 +1,6 @@
 //Main function 
 
-public static void main()
+public static void main(String[] args)
 {
   new Function(3,4);
   new Function(0,0);
