@@ -2,7 +2,29 @@ public class Fraction
 {
    private long numerator; 
    private long denominator;
-    
+
+   public long gcd( this.numerator , this.denominator )
+      {
+         if ( this.numerator < 0 )
+            {
+            then numerator = -numerator // to avoid sign problems
+            }
+         
+         while (this.denominator != 0)
+         {
+            remainder = this.numerator % this.denominator;
+            this.numerator = this.denominator;
+            this.denominator = remainder
+               
+            if (this.numerator == 0)
+               {
+               this.numerator = 1
+               }
+         }
+         
+         return this.numerator;
+      }
+      
    public Fraction(long numerator,long denominator)
     {
 
@@ -60,5 +82,4 @@ public class Fraction
              }
         
           }
-
-}
+   
