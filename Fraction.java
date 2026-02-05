@@ -12,13 +12,13 @@ public class Fraction
            this.denominator = 0;  
        }
                 
-        else if ( numerator == 0 )
+        else if ( this.numerator == 0 )
         {
            this.numerator = Long.signum(this.numerator);
            this.denominator = 1 ;  
         }
             
-        else if (this.numerator == this.denomiator)
+        else if (this.numerator == this.denominator)
       { 
            this.numerator = 1;
            this.denominator = 1;  
@@ -27,11 +27,11 @@ public class Fraction
          else
       {
                 long reducedFraction;
-                long tempVar = Long.signum(numerator) * Long.signum(denominator);
-                this.numerator = Math.abs(numerator);
-                this.denominator = Math.abs(denominator);
-                this.numerator = this.numerator / gcb(this.numerator,this.demominator);
-                this.denominator = this.denominator /gcb(this.numerator,this.denominator) ; 
+                long tempVar = Long.signum(this.numerator) * Long.signum(this.denominator);
+                this.numerator = Math.abs(this.numerator);
+                this.denominator = Math.abs(this.denominator);
+                this.numerator = this.numerator / gcd(this.numerator,this.demominator);
+                this.denominator = this.denominator /gcd(this.numerator,this.denominator) ; 
          
                 this.numerator *= Long.signum(tempVar) ;    
         }
