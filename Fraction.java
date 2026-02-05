@@ -6,19 +6,19 @@ public class Fraction
    public Fraction(long numerator,long denominator)
     {
 
-        if (denominator == 0)
+        if (this.denominator == 0)
        {
-           this.numerator = Long.signum(numerator);
+           this.numerator = Long.signum(this.numerator);
            this.denominator = 0;  
        }
                 
         else if ( numerator == 0 )
         {
-           this.numerator = Long.signum(numerator);
+           this.numerator = Long.signum(this.numerator);
            this.denominator = 1 ;  
         }
             
-        else if (numerator == denomiator)
+        else if (this.numerator == this.denomiator)
       { 
            this.numerator = 1;
            this.denominator = 1;  
@@ -42,11 +42,11 @@ public class Fraction
    public String toString()
           {
              String fractionOut = "";
-             if (this.denominator == 0 && this.numerator > 0)
+             if ((this.denominator == 0) && (this.numerator > 0))
              {
                 return "+ Infinity";
              }
-             else if (this.denominator && this.numerator < 0)
+             else if ((this.denominator) && (this.numerator < 0))
              {
                 return "- Infinity";
              }
