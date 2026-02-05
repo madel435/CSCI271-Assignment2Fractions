@@ -96,7 +96,7 @@ public class Fraction
    //Main function 
    public static void main(String[] args)
    {
-      int i = 7
+      int i = 7;
       while ( i > 0)
       {
          
