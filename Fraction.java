@@ -78,20 +78,21 @@ public class Fraction
     }
   public Fraction add(Fraction a , Fraction b )
     {
-      return a * b;
+      return a + b;
     }
   
   public Fraction multiply(Fraction a , Fraction b )
     {
-      return numerator * numeator;
+      return a * b;
     }
-  public Fraction divide(Fraction a , Fraction b )
-    {
-      return a / b ;
+  public Fraction divide(Fraction f )
+    { 
+      return new Fraction ((this.numerator \ this.denominator ) * f.Reciprocol());
     }
+   
   public Fraction negate(Fraction a , Fraction b )
     {
-      return |a/b| ;
+      //
     }
    public Fraction Reciprocol()
    {
@@ -100,14 +101,12 @@ public class Fraction
    
       public Fraction pow(Fraction a , Fraction b )
     {
-      //Add
+      for (int i = 1; i < b; i++)
+         {
+            a.multiply();
+         }
     }
  
-    public Fraction divide(Fraction f )
-    { 
-      return new Fraction ((this.numerator \ this.denominator ) * f.Reciprocol());
-    }
-
 
        //WRITE TWO STRING
    public String toString()
