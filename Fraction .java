@@ -33,8 +33,7 @@ public class Fraction
                 this.numerator = this.numerator / gcb(this.numerator,this.demominator);
                 this.denominator = this.denominator /gcb(this.numerator,this.denominator) ; 
          
-                this.numerator *= Long.signum(tempVar) ;  
-                       
+                this.numerator *= Long.signum(tempVar) ;    
         }
 
     }
@@ -43,10 +42,22 @@ public class Fraction
    public String toString()
           {
              String fractionOut = "";
-             if (this.)
-             else if ()
-             else ( 
-             return fractionOut; 
+             if (this.denominator == 0 && this.numerator > 0)
+             {
+                return "+ Infinity";
+             }
+             else if (this.denominator && this.numerator < 0)
+             {
+                return "- Infinity";
+             }
+             else if (this.denominator == 0)
+             {
+                return this.numerator;
+             }
+             else 
+             {
+                return Long.toString(this.numerator); 
+             }
         
           }
 
