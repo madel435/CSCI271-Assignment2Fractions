@@ -29,9 +29,9 @@ public class Fraction
                 Math.abs(numerator);
                 Math.abs(denominator);
                 reducedFraction = numerator / gcb(numerator,demominator) * gcb(numerator,denominator) / denominator; 
+         
                 reducedFraction = Long.signum(tempVar) * Long.signum(reducedFraction);  
-             
-          
+                       
           public String toString()
           {
              String fractionOut = "";
