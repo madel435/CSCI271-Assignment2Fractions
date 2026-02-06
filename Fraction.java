@@ -74,15 +74,15 @@ public class Fraction
 
 
 /*****************************<Fraction>****************************
-* Description: a brief description of what the function does.
+* Description: This takes the numerator and denominator and checks if they are 0 and if so etracts the sign 
 *
-* Parameters: a list each parameter the function takes
+* Parameters: long numerator long denominator 
 *
 * Pre: The numeratpr and denominator should have been taken in from main using the getNum and getdenom 
 *
 * Post:
-
-* Returns: Describe what value the function returns, if any.
+If denom / numerator are 0 it sets them to deal with later 
+* Returns: Returns the 
 *
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
@@ -336,19 +336,7 @@ public class Fraction
 * Called by:  F1, F2, F3, F4, F5 and F6
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
- public Fraction pow(Fraction f )
-    {
-	
-       int bottom = this.num ;
-	   int top = this.denom;
-	   long result = 1;
-       
-       for (int i = 1; i < bottom; i++)
-         {
-           result = multiply(bottom);
-         }
-       return result;
-    }
+
 /*****************************<main>****************************
 * Description: This is the main, sends the values (num and denom value) and then assigns it to fractions to be 
 called to print by each changer (add mulitpy etc). 
