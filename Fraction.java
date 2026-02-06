@@ -105,7 +105,7 @@ public class Fraction
 
    public Fraction add(Fraction a , Fraction b )
     {
-      num = A.numerator + b.numerator;
+      num = a.numerator + b.numerator;
       return new fraction(num,denominator);
  
     }
@@ -118,7 +118,7 @@ public class Fraction
 
    public Fraction multiply(Fraction a , Fraction b )
     {
-   	 long  num = a..numerator * b.numerator ;
+   	 long  num = a.numerator * b.numerator ;
  	    long denom = a.denominator * b.denominator;
        return new Fraction(num,denom);
     }
