@@ -116,7 +116,7 @@ public class Fraction
    {
        long num = a.numerator * b.denominator;
        long denom = a.denominator * b.numerator;
-       long tempNum = num - denom; 
+       int tempNum = num - denom; 
        return new Fraction(tempNum);
    }
 
@@ -151,14 +151,34 @@ public class Fraction
          Fraction F6 = new Fraction(10,20);
          
          System.out.println(F1.toString().add());
-         System.out.println(F1.toString().add());
-         System.out.println(F1.toString().add());
-         System.out.println(F1.toString().add());
+         System.out.println(F1.toString().subtract());
+         System.out.println(F1.toString().multiply());
+         System.out.println(F1.toString().divide());
+
+         System.out.println(F2.toString().add());
+         System.out.println(F2.toString().subtract());
+         System.out.println(F2.toString().multiply());
+         System.out.println(F2.toString().divide());
       
-         System.out.println(F2.toString());
          System.out.println(F3.toString());
-         System.out.println(F4.toString());
-         System.out.println(F5.toString());
-         System.out.println(F6.toString());
+         System.out.println(F3.toString().add());
+         System.out.println(F3.toString().subtract());
+         System.out.println(F3.toString().multiply());
+         System.out.println(F3.toString().divide());
+      
+         System.out.println(F4.toString().add());
+         System.out.println(F4.toString().subtract());
+         System.out.println(F4.toString().multiply());
+         System.out.println(F4.toString().divide());
+         
+         System.out.println(F5.toString().add());
+         System.out.println(F5.toString().subtract());
+         System.out.println(F5.toString().multiply());
+         System.out.println(F5.toString().divide());
+      
+         System.out.println(F6.toString().add());
+         System.out.println(F6.toString().subtract());
+         System.out.println(F6.toString().multiply());
+         System.out.println(F6.toString().divide());
    }
 }
