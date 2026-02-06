@@ -139,12 +139,17 @@ public class Fraction
    
  public Fraction pow(Fraction a , Fraction b )
     {
-       int n =  ;
-       for (int i = 1; i < n; i++)
+      int bottom = this.numerator;
+	   int top = this.denominator;
+	   long result = 1;
+       
+       for (int i = 1; i < bottom; i++)
          {
-           multiply(Fraction a, Fraction b);
+           result = multiply(bottom);
          }
-       return a;
+       return result;
+    }
+
     }
 
    
