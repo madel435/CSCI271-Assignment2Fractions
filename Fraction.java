@@ -1,7 +1,7 @@
 public class Fraction
 {
-   private long numerator; 
-   private long denominator;
+   private long numerator = numerator; 
+   private long denominator = denominator;
    
    public long getNum()
    {
