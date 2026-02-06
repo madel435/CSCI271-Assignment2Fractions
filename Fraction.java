@@ -128,7 +128,7 @@ public class Fraction
    public Fraction divide(Fraction f )
     { 
       long num = this.numerator * f.numerator;
-      long denom = this.denominator * f.Reciprocol());
+      long denom = this.denominator * f.Reciprocol();
       return new Fraction(num,denom);
     }
 
