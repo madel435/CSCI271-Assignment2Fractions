@@ -38,7 +38,9 @@ public class Fraction
       
    public Fraction(long numerator,long denominator)
     {
-
+      this.numerator = 0; 
+      this.denominator = 0;
+       
         if (this.denominator == 0)
        {
            this.numerator = Long.signum(this.numerator);
