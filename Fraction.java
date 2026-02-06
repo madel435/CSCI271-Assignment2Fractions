@@ -36,8 +36,8 @@ public class Fraction
    private long numerator; 
    private long denominator;
 
-/*****************************<Function Name>****************************
-* Description: a brief description of what the function does.
+/*****************************<getNum>****************************
+* Description: This function takes in the numerator value and returns it.
 *
 * Parameters: a list each parameter the function takes
 *
@@ -49,17 +49,17 @@ public class Fraction
 * to be true when the function finishes, assuming that the
 * listed preconditions are satisfied.
 *
-* Returns:  This returns the denominator 
+* Returns:  This returns the numerator 
 *
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by: Numerator referenced by : 
+* Calls: N/A
 ************************************************************************/
 	
    public long getNum()
    {
       return numerator;
    }
-/*****************************<Function Name>****************************
+/*****************************<getDenom>****************************
 * Description: a brief description of what the function does.
 *
 * Parameters: a list each parameter the function takes
@@ -82,7 +82,7 @@ public class Fraction
       return denominator;   
    }
 
-/*****************************<Function Name>****************************
+/*****************************<gcd>****************************
 * Description: a brief description of what the function does.
 *
 * Parameters: a list each parameter the function takes
@@ -123,7 +123,7 @@ public class Fraction
          
          return num;
       }
-/*****************************<Function Name>****************************
+/*****************************<Fraction>****************************
 * Description: a brief description of what the function does.
 *
 * Parameters: a list each parameter the function takes
@@ -141,7 +141,7 @@ public class Fraction
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
-	
+	//Fraction 
    public Fraction(long numerator,long denominator)
     {
       this.numerator = numerator; 
@@ -183,27 +183,24 @@ public class Fraction
 *
 * Parameters: a list each parameter the function takes
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: The numerator must be set if not it won't be correct 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post: The denom is set and the numerator is set. 
 *
-* Returns: Describe what value the function returns, if any.
+* Returns: N/A
 *
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
+	//Fraction function 
     public Fraction(int num)
     {
-      numerator = num;
-      denominator = 1; 
+      numerator = num; //Sets num
+      denominator = 1; //Sets denom 
     }
 
-/*****************************<Function Name>****************************
-* Description: a brief description of what the function does.
+/*****************************<toString>****************************
+* Description: This string changes the long to a string 
 *
 * Parameters: a list each parameter the function takes
 *
@@ -220,7 +217,7 @@ public class Fraction
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
-       //WRITE TWO STRING
+   //Long->String Function 
    public String toString()
           {
              String fractionOut = "";
@@ -242,7 +239,7 @@ public class Fraction
              }
           }
 
-/*****************************<Function Name>****************************
+/*****************************<add>****************************
 * Description: This function adds the Fractions and outputs them 
 *
 * Parameters: a list each parameter the function takes
@@ -260,6 +257,7 @@ public class Fraction
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
+	//Add function 
    public Fraction add(Fraction f)
     {
        long num = this.numerator * f.denominator + this.denominator * f.numerator ;
@@ -268,7 +266,7 @@ public class Fraction
  
     }
 	
-/*****************************<Function Name>****************************
+/*****************************<subtract>****************************
 * Description: a brief description of what the function does.
 *
 * Parameters: a list each parameter the function takes
@@ -292,9 +290,8 @@ public class Fraction
        long denom = this.denominator * f.numerator;
        return new Fraction(num,denom );
    }
-/*****************************<Function Name>****************************
-* Description: a brief description of what the function does.
-*
+/*****************************<multiply>****************************
+* Description: This function multiplies the fraction together 
 * Parameters: a list each parameter the function takes
 *
 * Pre: list the preconditions; i.e., the things that must be true
@@ -310,14 +307,15 @@ public class Fraction
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
+	//Multiply function 
    public Fraction multiply(Fraction f )
     {
-   	 long  num = this.numerator * f.numerator ;
+   	 long  num = this.numerator * f.numerator ; 
  	    long denom = this.denominator * f.denominator;
        return new Fraction(num,denom);
     }
-/*****************************<Function Name>****************************
-* Description: a brief description of what the function does.
+/*****************************<divide>****************************
+* Description:This function divides the function 
 *
 * Parameters: a list each parameter the function takes
 *
@@ -345,7 +343,7 @@ public class Fraction
    {
       return new Fraction (denominator, numerator); 
    }
-/*****************************<Function Name>****************************
+/*****************************<pow>****************************
 * Description: a brief description of what the function does.
 *
 * Parameters: a list each parameter the function takes
@@ -365,18 +363,18 @@ public class Fraction
 ************************************************************************/
  public Fraction pow(Fraction a , Fraction b )
     {
-       long bottom = a;
-	   long top = b;
+       int bottom = a;
+	   int top = b;
 	   long result = 1;
        
        for (int i = 1; i < bottom; i++)
          {
-           result = multiply(a);
+           result = multiply(bottom);
          }
        return result;
     }
-/*****************************<Function Name>****************************
-* Description: a brief description of what the function does.
+/*****************************<main>****************************
+* Description: This is the main 
 *
 * Parameters: a list each parameter the function takes
 *
