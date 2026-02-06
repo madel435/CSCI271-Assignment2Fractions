@@ -105,17 +105,19 @@ public class Fraction
 
    public Fraction add(Fraction a , Fraction b )
     {
-       long num = a.numerator + b.numerator;
-       long denom = denominator;
-       return new Fraction(num,denominator);
+       long num = a.numerator * b.denominator;
+       long denom = a.denominator * b.numerator;
+       long tempNum = num + denom; 
+       return new Fraction(tempNum);
  
     }
   
    public Fraction subtract(Fraction a, Fraction b )
    {
-       long num = a.numerator - b.numerator;
-       long denom = denominator;
-       return new Fraction(num,denominator);
+       long num = a.numerator * b.denominator;
+       long denom = a.denominator * b.numerator;
+       long tempNum = num - denom; 
+       return new Fraction(tempNum);
    }
 
    public Fraction multiply(Fraction a , Fraction b )
@@ -148,7 +150,11 @@ public class Fraction
          Fraction F5 = new Fraction(6,9);
          Fraction F6 = new Fraction(10,20);
          
-         System.out.println(F1.toString());
+         System.out.println(F1.toString().add());
+         System.out.println(F1.toString().add());
+         System.out.println(F1.toString().add());
+         System.out.println(F1.toString().add());
+      
          System.out.println(F2.toString());
          System.out.println(F3.toString());
          System.out.println(F4.toString());
