@@ -47,7 +47,7 @@ public class Fraction
 *
 * Called by: Vode that needs to know the numerator 
 			 Used by main 
-* Calls: N/A
+* Calls: The numeator values from main 
 ************************************************************************/
 	
    public long getNum()
@@ -65,7 +65,7 @@ public class Fraction
 *
 * Called by: Functions that needs to know the Denominator  
 			 Used by main 
-* Calls: N/A
+* Calls: The denomiantor values from main  
 ************************************************************************/
    public long getDenom()
    {
@@ -78,14 +78,10 @@ public class Fraction
 *
 * Parameters: a list each parameter the function takes
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: The numeratpr and denominator should have been taken in from main using the getNum and getdenom 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
+* Post:
+
 * Returns: Describe what value the function returns, if any.
 *
 * Called by: list the name(s) of the function(s) that call this one.
@@ -165,7 +161,7 @@ public class Fraction
 * Returns: Describe what value the function returns, if any.
 *
 * Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Calls: References the denominator and numerator 
 ************************************************************************/
    //Long->String Function 
    public String toString()
@@ -234,20 +230,16 @@ public class Fraction
 /*****************************<add>****************************
 * Description: This function adds the Fractions and outputs them 
 *
-* Parameters: a list each parameter the function takes
+* Parameters: 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: There must be a fraction f 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post: That the numerator and denomiantor have been added/ altered after doing the math 
 *
-* Returns: Describe what value the function returns, if any.
+* Returns: Returns the new fraction 
 *
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by: F1, F2, F3, F4, F5 and F6
+* Calls: Calls Fraction 
 ************************************************************************/
 	//Add function 
    public Fraction add(Fraction f)
@@ -259,7 +251,7 @@ public class Fraction
     }
 	
 /*****************************<subtract>****************************
-* Description: a brief description of what the function does.
+* Description:This function subtracts the fractions
 *
 * Parameters: a list each parameter the function takes
 *
@@ -267,14 +259,12 @@ public class Fraction
 * before the function is called. Usually these involve whether
 * and how parameters must be initialised before the call, etc.
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post:  That the numerator and denomiantor have been subtracted / altered after doing the math 
 *
-* Returns: Describe what value the function returns, if any.
+* Returns: The new fraction is returned 
 *
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by:  F1, F2, F3, F4, F5 and F6
+* Calls: 
 ************************************************************************/
    public Fraction subtract(Fraction f)
    {
@@ -284,20 +274,15 @@ public class Fraction
    }
 /*****************************<multiply>****************************
 * Description: This function multiplies the fraction together 
-* Parameters: a list each parameter the function takes
+* Parameters: Fraction f 
+* Pre: That the fractions must have a numerator and denomintaor and hat the Fraction f must exist. 
+
+* Post: That the numerator and denominator have been multiplied once the function is finished. 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Returns: The new numerator and denominator have been returned 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns: Describe what value the function returns, if any.
-*
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by: F1, F2, F3, F4, F5 and F6
+* Calls: Fraction()
 ************************************************************************/
 	//Multiply function 
    public Fraction multiply(Fraction f )
@@ -321,7 +306,7 @@ public class Fraction
 *
 * Returns: Describe what value the function returns, if any.
 *
-* Called by: list the name(s) of the function(s) that call this one.
+* Called by:  F1, F2, F3, F4, F5 and F6
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
    public Fraction divide(Fraction f)
@@ -336,27 +321,26 @@ public class Fraction
       return new Fraction (denominator, numerator); 
    }
 /*****************************<pow>****************************
-* Description: a brief description of what the function does.
+* Description: This function returns the value of the base to the exponenet, when the math is completed. 
 *
-* Parameters: a list each parameter the function takes
-*
+* Parameters: Fraction f 
 * Pre: list the preconditions; i.e., the things that must be true
 * before the function is called. Usually these involve whether
 * and how parameters must be initialised before the call, etc.
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns: Describe what value the function returns, if any.
-*
-* Called by: list the name(s) of the function(s) that call this one.
+* Post: That the base is multiplied by itself mulitple times to the (exponent)
+* times 
+
+* Returns: Returns the new result 
+*+
+* Called by:  F1, F2, F3, F4, F5 and F6
 * Calls: list the name(s) of the function(s) that this one calls.
 ************************************************************************/
- public Fraction pow(Fraction a , Fraction b )
+ public Fraction pow(Fraction f )
     {
-       int bottom = a;
-	   int top = b;
+	
+       int bottom = num ;
+	   int top = denom;
 	   long result = 1;
        
        for (int i = 1; i < bottom; i++)
@@ -370,9 +354,9 @@ public class Fraction
 called to print by each changer (add mulitpy etc). 
 Within this in the background the toString is working to convert
 *
-* Parameters: a list each parameter the function takes
+* Parameters: 
 *
-* Pre: The Fraction must be able to take in a numerator and denominator in that order 
+* Pre: toString must be correct the add, subtract,multiply, divide must be correct, numerator and denominator must be set correctly 
 *
 * Post: The fractions should print out after being simplified and added , subtracted or whichever it is suppose to do 
 *
@@ -385,38 +369,38 @@ Within this in the background the toString is working to convert
    //Main function 
    public static void main(String[] args)
    {
-         Fraction F1 = new Fraction(3,4);
-         Fraction F2 = new Fraction(5,10);
-         Fraction F3 = new Fraction(0,9);
-         Fraction F4 = new Fraction(4,0);
-         Fraction F5 = new Fraction(6,9);
-         Fraction F6 = new Fraction(10,20);
+         Fraction F1 = new Fraction(3,4); //Creating and inputting the F1 values to numerator and denominator 
+         Fraction F2 = new Fraction(5,10);//Creating and inputting the F2 values to numerator and denominator 
+         Fraction F3 = new Fraction(0,9);//Creating and inputting the F3 values to numerator and denominator 
+         Fraction F4 = new Fraction(4,0);//Creating and inputting the F4 values to numerator and denominator 
+         Fraction F5 = new Fraction(6,9);//Creating and inputting the F5 values to numerator and denominator 
+         Fraction F6 = new Fraction(10,20);//Creating and inputting the F6 values to numerator and denominator 
          
-         System.out.println(F1.add(F2));
+         System.out.println(F1.add(F2)); //Adds the F1 values to F2 and prints out the new fraction 
          System.out.println(F1.subtract(F2));
          System.out.println(F1.multiply(F2));
          System.out.println(F1.divide(F2));
          System.out.println(F1.pow(F2));
       
-         System.out.println(F2.add(F3));
+         System.out.println(F2.add(F3)); //Adds the F2 fraction to F3 and prints out the new fraction 
          System.out.println(F2.subtract(F3));
          System.out.println(F2.multiply(F3));
          System.out.println(F2.divide(F3));
          System.out.println(F2.pow(F3));
       
-         System.out.println(F3.add(F4));
+         System.out.println(F3.add(F4)); //Adds the F3 values to F4 and prints out the new fraction 
          System.out.println(F3.subtract(F4));
          System.out.println(F3.multiply(F4));
          System.out.println(F3.divide(F4));
          System.out.println(F3.pow(F4));
          
-         System.out.println(F4.add(F5));
+         System.out.println(F4.add(F5));//Adds the F4 values to F5 and prints out the new fraction 
          System.out.println(F4.subtract(F5));
          System.out.println(F4.multiply(F5));
          System.out.println(F4.divide(F5));
          System.out.println(F4.pow(F5));
       
-         System.out.println(F5.add(F6));
+         System.out.println(F5.add(F6));//Adds the F1 values to F2 and prints out the new fraction 
          System.out.println(F5.subtract(F6));
          System.out.println(F5.multiply(F6));
          System.out.println(F5.divide(F6));
