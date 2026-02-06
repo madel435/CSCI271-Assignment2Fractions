@@ -374,24 +374,24 @@ Within this in the background the toString is working to convert
          System.out.println(F2.subtract(F3));
          System.out.println(F2.multiply(F3));
          System.out.println(F2.divide(F3));
-         
+         System.out.println("******************************************** New Fraction ************************************************");
       
          System.out.println(F3.add(F4)); //Adds the F3 values to F4 and prints out the new fraction 
          System.out.println(F3.subtract(F4));
          System.out.println(F3.multiply(F4));
          System.out.println(F3.divide(F4));
-        
+         System.out.println("******************************************** New Fraction ************************************************");
          
          System.out.println(F4.add(F5));//Adds the F4 values to F5 and prints out the new fraction 
          System.out.println(F4.subtract(F5));
          System.out.println(F4.multiply(F5));
          System.out.println(F4.divide(F5));
-      
+         System.out.println("******************************************** New Fraction ************************************************");
       
          System.out.println(F5.add(F6));//Adds the F1 values to F2 and prints out the new fraction 
          System.out.println(F5.subtract(F6));
          System.out.println(F5.multiply(F6));
          System.out.println(F5.divide(F6));
-      
+         System.out.println("******************************************** New Fraction ************************************************");
    }
 }
