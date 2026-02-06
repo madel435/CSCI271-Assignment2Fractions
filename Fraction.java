@@ -125,10 +125,10 @@ If denom / numerator are 0 it sets them to deal with later
         }
 
     }
-/*****************************<Function Name>****************************
+/*****************************<Fraction>****************************
 * Description: a brief description of what the function does.
 *
-* Parameters: a list each parameter the function takes
+* Parameters: int num
 *
 * Pre: The numerator must be set if not it won't be correct 
 *
@@ -136,8 +136,8 @@ If denom / numerator are 0 it sets them to deal with later
 *
 * Returns: N/A
 *
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by:gcd
+* Calls:
 ************************************************************************/
 	//Fraction function 
     public Fraction(int num)
@@ -149,20 +149,15 @@ If denom / numerator are 0 it sets them to deal with later
 	/*****************************<toString>****************************
 * Description: This string changes the long to a string 
 *
-* Parameters: a list each parameter the function takes
+* Parameters: 
+* Pre:Fraction must be creadted and numerator and denominator must be set 
+
+* Post:Figures if numerator or denominator ==0 returns prints accordingly 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
-*
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns: Describe what value the function returns, if any.
+* Returns: +Infinity , -Infinity , returns the numerator / denominator 
 *
 * Called by: list the name(s) of the function(s) that call this one.
-* Calls: References the denominator and numerator 
+* Calls: References the denominator and numerator and .toString 
 ************************************************************************/
    //Long->String Function 
    public String toString()
@@ -187,19 +182,15 @@ If denom / numerator are 0 it sets them to deal with later
           }
 
 /*****************************<gcd>****************************
-* Description: a brief description of what the function does.
+* Description: Finds the greatest common denomintor and similify the fractions 
 *
-* Parameters: a list each parameter the function takes
+* Parameters:long num and long denom 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: The num must be set and the denom must be set 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post: The num and denom is checked then the new redueced fraction or reduced numerator and denominator are outputted 
 *
-* Returns: Describe what value the function returns, if any.
+* Returns:num 
 *
 * Called by: list the name(s) of the function(s) that call this one.
 * Calls: list the name(s) of the function(s) that this one calls.
@@ -295,20 +286,16 @@ If denom / numerator are 0 it sets them to deal with later
 /*****************************<divide>****************************
 * Description:This function divides the function 
 *
-* Parameters: a list each parameter the function takes
+* Parameters: fraction f 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: Numerator and denominator must be set prior 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post:numerator and denominator 
 *
 * Returns: Describe what value the function returns, if any.
 *
 * Called by:  F1, F2, F3, F4, F5 and F6
-* Calls: list the name(s) of the function(s) that this one calls.
+* Calls: Referneces the numerator and denominator 
 ************************************************************************/
    public Fraction divide(Fraction f)
     { 
@@ -316,11 +303,24 @@ If denom / numerator are 0 it sets them to deal with later
       long denom = this.denominator * f.denominator;
       return new Fraction(num,denom);
     }
+/*****************************<Reciprocol>****************************
+* Description: This function returns the value of the base to the exponenet, when the math is completed. 
+*
+* Parameters: Fraction f 
+* Pre:The denomintoar and the numerator must be set 
+* Post: That the base is multiplied by itself mulitple times to the (exponent)
+* times 
 
+* Returns: Returns the new result 
+*+
+* Called by:  F1, F2, F3, F4, F5 and F6
+* Calls: Refernces the numerator and denominator 
+************************************************************************/
   public Fraction Reciprocol()
    {
       return new Fraction (denominator, numerator); 
    }
+	
 /*****************************<pow>****************************
 * Description: This function returns the value of the base to the exponenet, when the math is completed. 
 *
