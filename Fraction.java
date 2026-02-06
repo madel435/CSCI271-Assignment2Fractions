@@ -39,19 +39,14 @@ public class Fraction
 /*****************************<getNum>****************************
 * Description: This function takes in the numerator value and returns it.
 *
-* Parameters: a list each parameter the function takes
+* Parameters: None 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: The fraction object created and long numerator created. 
+* Post: The numerator is taken in and returned 
+* Returns:  This returns the value that is stored in the long numerator. 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns:  This returns the numerator 
-*
-* Called by: Numerator referenced by : 
+* Called by: Vode that needs to know the numerator 
+			 Used by main 
 * Calls: N/A
 ************************************************************************/
 	
@@ -60,69 +55,24 @@ public class Fraction
       return numerator;
    }
 /*****************************<getDenom>****************************
-* Description: a brief description of what the function does.
+* Description: This function takes in the denominator value and returns it.
 *
-* Parameters: a list each parameter the function takes
+* Parameters: None 
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre:  The fraction object created, and long denominator created.
+* Post: The denominator is taken in and returned 
+* Returns:  This returns the value that is stored in the long denominator. 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns: Describe what value the function returns, if any.
-*
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by: Functions that needs to know the Denominator  
+			 Used by main 
+* Calls: N/A
 ************************************************************************/
    public long getDenom()
    {
       return denominator;   
    }
 
-/*****************************<gcd>****************************
-* Description: a brief description of what the function does.
-*
-* Parameters: a list each parameter the function takes
-*
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
-*
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
-*
-* Returns: Describe what value the function returns, if any.
-*
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
-************************************************************************/
-   public long gcd(long num,long denom)
-      {
-         long remainder;
-         
-         if ( num < 0 )
-            {
-            num = -num; // to avoid sign problems
-            }
-         
-         while (denom != 0)
-         {
-            remainder = num % denom;
-            num = denom;
-            denom = remainder;
-               
-            if (num == 0)
-               {
-                num = 1;
-               }
-         }
-         
-         return num;
-      }
+
 /*****************************<Fraction>****************************
 * Description: a brief description of what the function does.
 *
@@ -197,9 +147,9 @@ public class Fraction
     {
       numerator = num; //Sets num
       denominator = 1; //Sets denom 
-    }
-
-/*****************************<toString>****************************
+    
+	}
+	/*****************************<toString>****************************
 * Description: This string changes the long to a string 
 *
 * Parameters: a list each parameter the function takes
@@ -238,6 +188,48 @@ public class Fraction
                 return numerator + "/" + denominator; 
              }
           }
+
+/*****************************<gcd>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
+   public long gcd(long num,long denom)
+      {
+         long remainder;
+         
+         if ( num < 0 )
+            {
+            num = -num; // to avoid sign problems
+            }
+         
+         while (denom != 0)
+         {
+            remainder = num % denom;
+            num = denom;
+            denom = remainder;
+               
+            if (num == 0)
+               {
+                num = 1;
+               }
+         }
+         
+         return num;
+      }
 
 /*****************************<add>****************************
 * Description: This function adds the Fractions and outputs them 
@@ -374,22 +366,20 @@ public class Fraction
        return result;
     }
 /*****************************<main>****************************
-* Description: This is the main 
+* Description: This is the main, sends the values (num and denom value) and then assigns it to fractions to be 
+called to print by each changer (add mulitpy etc). 
+Within this in the background the toString is working to convert
 *
 * Parameters: a list each parameter the function takes
 *
-* Pre: list the preconditions; i.e., the things that must be true
-* before the function is called. Usually these involve whether
-* and how parameters must be initialised before the call, etc.
+* Pre: The Fraction must be able to take in a numerator and denominator in that order 
 *
-* Post: List the postconditions; i.e., the things that are guaranteed
-* to be true when the function finishes, assuming that the
-* listed preconditions are satisfied.
+* Post: The fractions should print out after being simplified and added , subtracted or whichever it is suppose to do 
 *
-* Returns: Describe what value the function returns, if any.
+* Returns: Returns the fractions
 *
-* Called by: list the name(s) of the function(s) that call this one.
-* Calls: list the name(s) of the function(s) that this one calls.
+* Called by: 
+* Calls:Officially .add .subtract .multiply .divide .pow
 ************************************************************************/
    
    //Main function 
