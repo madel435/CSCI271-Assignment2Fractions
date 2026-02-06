@@ -136,6 +136,16 @@ public class Fraction
    {
       return new Fraction (denominator, numerator); 
    }
+   
+ public Fraction pow(Fraction a , Fraction b )
+    {
+       int n =  ;
+       for (int i = 1; i < n; i++)
+         {
+           multiply(Fraction a, Fraction b);
+         }
+       return a;
+    }
 
    
    //Main function 
@@ -152,25 +162,30 @@ public class Fraction
          System.out.println(F1.subtract(F2));
          System.out.println(F1.multiply(F2));
          System.out.println(F1.divide(F2));
-
+         System.out.println(F1.pow(F2));
+      
          System.out.println(F2.add(F3));
          System.out.println(F2.subtract(F3));
          System.out.println(F2.multiply(F3));
          System.out.println(F2.divide(F3));
+         System.out.println(F2.pow(F3));
       
          System.out.println(F3.add(F4));
          System.out.println(F3.subtract(F4));
          System.out.println(F3.multiply(F4));
          System.out.println(F3.divide(F4));
-      
+         System.out.println(F3.pow(F4));
+         
          System.out.println(F4.add(F5));
          System.out.println(F4.subtract(F5));
          System.out.println(F4.multiply(F5));
          System.out.println(F4.divide(F5));
-         
+         System.out.println(F4.pow(F5));
+      
          System.out.println(F5.add(F6));
          System.out.println(F5.subtract(F6));
          System.out.println(F5.multiply(F6));
          System.out.println(F5.divide(F6));
+         System.out.println(F5.pow(F6));
    }
 }
