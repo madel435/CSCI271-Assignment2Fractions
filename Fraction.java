@@ -150,29 +150,29 @@ public class Fraction
          Fraction F5 = new Fraction(6,9);
          Fraction F6 = new Fraction(10,20);
          
-         System.out.println(F1.add(F1,F2));
-         System.out.println(F1.subtract(F1,F2));
-         System.out.println(F1.multiply(F1,F2));
-         System.out.println(F1.divide(F1,F2));
+         System.out.println(F1.add(F2));
+         System.out.println(F1.subtract(F2));
+         System.out.println(F1.multiply(F2));
+         System.out.println(F1.divide(F2));
 
-         System.out.println(F2.add(F2,F3));
-         System.out.println(F2.subtract(F2,F3));
-         System.out.println(F2.multiply(F2,F3));
-         System.out.println(F2.divide(F2,F3));
+         System.out.println(F2.add(F3));
+         System.out.println(F2.subtract(F3));
+         System.out.println(F2.multiply(F3));
+         System.out.println(F2.divide(F3));
       
-         System.out.println(F3.add(F3,F4));
-         System.out.println(F3.subtract(F3,F4));
-         System.out.println(F3.multiply(F3,F4));
-         System.out.println(F3.divide(F3,F4));
+         System.out.println(F3.add(F4));
+         System.out.println(F3.subtract(F4));
+         System.out.println(F3.multiply(F4));
+         System.out.println(F3.divide(F4));
       
-         System.out.println(F4.add(F4,F5));
-         System.out.println(F4.subtract(F4,F5));
-         System.out.println(F4.multiply(F4,F5));
-         System.out.println(F4.divide(F4,F5));
+         System.out.println(F4.add(F5));
+         System.out.println(F4.subtract(F5));
+         System.out.println(F4.multiply(F5));
+         System.out.println(F4.divide(F5));
          
-         System.out.println(F5.add(F5,F6));
-         System.out.println(F5.subtract(F5,F6));
-         System.out.println(F5.multiply(F5,F6));
-         System.out.println(F5.divide(F5,F6));
+         System.out.println(F5.add(F6));
+         System.out.println(F5.subtract(F6));
+         System.out.println(F5.multiply(F6));
+         System.out.println(F5.divide(F6));
    }
 }
