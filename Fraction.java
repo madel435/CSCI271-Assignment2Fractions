@@ -130,7 +130,8 @@ public class Fraction
 
    public Fraction pow(Fraction a , Fraction b )
     {
-      for (int i = 1; i < b; i++)
+       int n = b ;
+      for (int i = 1; i < n; i++)
          {
             a.multiply();
          }
