@@ -368,7 +368,7 @@ Within this in the background the toString is working to convert
          System.out.println(F1.subtract(F2));
          System.out.println(F1.multiply(F2));
          System.out.println(F1.divide(F2));
-      
+         System.out.println("******************************************** New Fraction ************************************************");
       
          System.out.println(F2.add(F3)); //Adds the F2 fraction to F3 and prints out the new fraction 
          System.out.println(F2.subtract(F3));
