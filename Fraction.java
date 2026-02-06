@@ -339,8 +339,8 @@ public class Fraction
  public Fraction pow(Fraction f )
     {
 	
-       int bottom = num ;
-	   int top = denom;
+       int bottom = this.num ;
+	   int top = this.denom;
 	   long result = 1;
        
        for (int i = 1; i < bottom; i++)
