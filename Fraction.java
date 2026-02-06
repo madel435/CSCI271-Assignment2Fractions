@@ -9,11 +9,11 @@
 * Purpose
 * This program takes in fractions simplifies them then does math on them. 
 *
-*************************************************************************/
-*/2. Declaration
+*************************************************************************
+2. Declaration
 Every submission MUST INCLUDE the following header in each source code files or scripts submitted
 for assignments or projects. Please adhere to this policy.*/
-/*******************************************************************
+*******************************************************************
 * I declare and confirm the following:
 * - I have not discussed this program code with anyone other than my
 * instructor or the teaching assistants assigned to this course.
