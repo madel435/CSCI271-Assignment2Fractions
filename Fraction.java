@@ -150,35 +150,29 @@ public class Fraction
          Fraction F5 = new Fraction(6,9);
          Fraction F6 = new Fraction(10,20);
          
-         System.out.println(F1.toString().add());
-         System.out.println(F1.toString().subtract());
-         System.out.println(F1.toString().multiply());
-         System.out.println(F1.toString().divide());
+         System.out.println(F1.add(F2));
+         System.out.println(F1.subtract(F2));
+         System.out.println(F1.multiply(F2));
+         System.out.println(F1.divide(F2));
 
-         System.out.println(F2.toString().add());
-         System.out.println(F2.toString().subtract());
-         System.out.println(F2.toString().multiply());
-         System.out.println(F2.toString().divide());
+         System.out.println(F2.add(F3));
+         System.out.println(F2.subtract(F3));
+         System.out.println(F2.multiply(F3));
+         System.out.println(F2.divide(F3));
       
-         System.out.println(F3.toString());
-         System.out.println(F3.toString().add());
-         System.out.println(F3.toString().subtract());
-         System.out.println(F3.toString().multiply());
-         System.out.println(F3.toString().divide());
+         System.out.println(F3.add(F4));
+         System.out.println(F3.subtract(F4));
+         System.out.println(F3.multiply(F4));
+         System.out.println(F3.divide(F4));
       
-         System.out.println(F4.toString().add());
-         System.out.println(F4.toString().subtract());
-         System.out.println(F4.toString().multiply());
-         System.out.println(F4.toString().divide());
+         System.out.println(F4.add(F5));
+         System.out.println(F4.subtract(F5));
+         System.out.println(F4.multiply(F5));
+         System.out.println(F4.divide(F5));
          
-         System.out.println(F5.toString().add());
-         System.out.println(F5.toString().subtract());
-         System.out.println(F5.toString().multiply());
-         System.out.println(F5.toString().divide());
-      
-         System.out.println(F6.toString().add());
-         System.out.println(F6.toString().subtract());
-         System.out.println(F6.toString().multiply());
-         System.out.println(F6.toString().divide());
+         System.out.println(F5.add(F6));
+         System.out.println(F5.subtract(F6));
+         System.out.println(F5.multiply(F6));
+         System.out.println(F5.divide(F6));
    }
 }
