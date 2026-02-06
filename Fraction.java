@@ -102,14 +102,39 @@ public class Fraction
              }
           }
 
+
+   public Fraction add(Fraction a , Fraction b )
+    {
+      num = A.numerator + b.numerator;
+      return new fraction(num,denominator);
+ 
+    }
+  
+   public Fraction subtract(Fraction a, Fraction b )
+   {
+      num = a.numerator - b.numerator;
+      return new fraction(num,denominator);
+   }
+
    public Fraction multiply(Fraction a , Fraction b )
     {
    	 long  num = a..numerator * b.numerator ;
  	    long denom = a.denominator * b.denominator;
-       New Fraction(num,denom);
+       return new Fraction(num,denom);
     }
 
+   public Fraction divide(Fraction f )
+    { 
+      return new Fraction ((this.numerator / this.denominator ) * f.Reciprocol());
+    }
 
+   public Fraction pow(Fraction a , Fraction b )
+    {
+      for (int i = 1; i < b; i++)
+         {
+            a.multiply();
+         }
+    }
 
 
 
