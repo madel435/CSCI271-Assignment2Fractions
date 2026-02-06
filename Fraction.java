@@ -106,14 +106,14 @@ public class Fraction
    public Fraction add(Fraction a , Fraction b )
     {
       num = a.numerator + b.numerator;
-      return new fraction(num,denominator);
+      return new Fraction(num,denominator);
  
     }
   
    public Fraction subtract(Fraction a, Fraction b )
    {
       num = a.numerator - b.numerator;
-      return new fraction(num,denominator);
+      return new Fraction(num,denominator);
    }
 
    public Fraction multiply(Fraction a , Fraction b )
@@ -134,6 +134,7 @@ public class Fraction
          {
             a.multiply();
          }
+       return a;
     }
 
 
