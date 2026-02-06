@@ -1,17 +1,105 @@
+/*************************************************************************
+* Project 1 for CSCI 271-001 Spring 2026
+*
+* Author: Madeline Adelstone
+* OS: Windows 11 
+* Compiler: javac 25.0.1
+* Date: February 2, 2026
+*
+* Purpose
+* This program takes in fractions simplifies them then does math on them. 
+*
+*************************************************************************/
+2. Declaration
+Every submission MUST INCLUDE the following header in each source code files or scripts submitted
+for assignments or projects. Please adhere to this policy.
+/*******************************************************************
+* I declare and confirm the following:
+* - I have not discussed this program code with anyone other than my
+* instructor or the teaching assistants assigned to this course.
+* - I have not used programming code obtained from someone else,
+* or any unauthorised sources, including the Internet, either
+* modified or unmodified.
+* - If any source code or documentation used in my program was
+* obtained from other sources, like a text book or course notes,
+* I have clearly indicated that with a proper citation in the
+* comments of my program.
+* - I have not designed this program in such a way as to defeat or
+* interfere with the normal operation of the supplied grading code.
+*
+* Madeline Adelstone
+*
+********************************************************************/
+
 public class Fraction
 {
    private long numerator; 
    private long denominator;
-   
+
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns:  This returns the denominator 
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
+	
    public long getNum()
    {
       return numerator;
    }
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public long getDenom()
    {
       return denominator;   
    }
-   
+
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public long gcd(long num,long denom)
       {
          long remainder;
@@ -35,7 +123,25 @@ public class Fraction
          
          return num;
       }
-      
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
+	
    public Fraction(long numerator,long denominator)
     {
       this.numerator = numerator; 
@@ -72,14 +178,48 @@ public class Fraction
         }
 
     }
-   
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
     public Fraction(int num)
     {
       numerator = num;
       denominator = 1; 
     }
 
-
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
        //WRITE TWO STRING
    public String toString()
           {
@@ -102,7 +242,24 @@ public class Fraction
              }
           }
 
-
+/*****************************<Function Name>****************************
+* Description: This function adds the Fractions and outputs them 
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public Fraction add(Fraction f)
     {
        long num = this.numerator * f.denominator + this.denominator * f.numerator ;
@@ -110,21 +267,73 @@ public class Fraction
        return new Fraction(num, denom);
  
     }
-  
+	
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public Fraction subtract(Fraction f)
    {
        long num = this.numerator * f.denominator - this.denominator * f.numerator ;
        long denom = this.denominator * f.numerator;
        return new Fraction(num,denom );
    }
-
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public Fraction multiply(Fraction f )
     {
    	 long  num = this.numerator * f.numerator ;
  	    long denom = this.denominator * f.denominator;
        return new Fraction(num,denom);
     }
-
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    public Fraction divide(Fraction f)
     { 
       long num = this.numerator * f.numerator;
@@ -136,7 +345,24 @@ public class Fraction
    {
       return new Fraction (denominator, numerator); 
    }
-   
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
  public Fraction pow(Fraction a , Fraction b )
     {
        long bottom = a;
@@ -149,7 +375,24 @@ public class Fraction
          }
        return result;
     }
-
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
    
    //Main function 
    public static void main(String[] args)
