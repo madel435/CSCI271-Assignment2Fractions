@@ -103,7 +103,7 @@ public class Fraction
           }
 
 
-   public Fraction add(Fraction a , Fraction b )
+   public Fraction add(Fraction f)
     {
        long num = a.numerator * b.denominator;
        long denom = a.denominator * b.numerator;
@@ -112,7 +112,7 @@ public class Fraction
  
     }
   
-   public Fraction subtract(Fraction a, Fraction b )
+   public Fraction subtract(Fraction f)
    {
        long num = a.numerator * b.denominator;
        long denom = a.denominator * b.numerator;
@@ -120,7 +120,7 @@ public class Fraction
        return new Fraction(tempNum);
    }
 
-   public Fraction multiply(Fraction a , Fraction b )
+   public Fraction multiply(Fraction f)
     {
    	 long  num = a.numerator * b.numerator ;
  	    long denom = a.denominator * b.denominator;
