@@ -76,37 +76,7 @@ public class Fraction
       numerator = num;
       denominator = 1; 
     }
-  public Fraction add(Fraction a , Fraction b )
-    {
-      return a + b;
-    }
-  
-  public Fraction multiply(Fraction a , Fraction b )
-    {
-      return a * b;
-    }
-  public Fraction divide(Fraction f )
-    { 
-      return new Fraction ((this.numerator / this.denominator ) * f.Reciprocol());
-    }
-   
-  public Fraction negate(Fraction a , Fraction b )
-    {
-      //
-    }
-   public Fraction Reciprocol()
-   {
-      return new Fraction (denominator, numerator); 
-   }
-   
-      public Fraction pow(Fraction a , Fraction b )
-    {
-      for (int i = 1; i < b; i++)
-         {
-            a.multiply();
-         }
-    }
- 
+
 
        //WRITE TWO STRING
    public String toString()
