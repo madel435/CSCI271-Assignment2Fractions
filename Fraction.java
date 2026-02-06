@@ -150,8 +150,6 @@ public class Fraction
        return result;
     }
 
-    }
-
    
    //Main function 
    public static void main(String[] args)
