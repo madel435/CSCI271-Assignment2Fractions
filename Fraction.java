@@ -38,8 +38,8 @@ public class Fraction
       
    public Fraction(long numerator,long denominator)
     {
-      this.numerator = 0; 
-      this.denominator = 0;
+      this.numerator = numerator; 
+      this.denominator = denominator;
        
         if (this.denominator == 0)
        {
