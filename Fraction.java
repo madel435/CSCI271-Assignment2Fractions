@@ -27,6 +27,7 @@ for assignments or projects. Please adhere to this policy.
 * - I have not designed this program in such a way as to defeat or
 * interfere with the normal operation of the supplied grading code.
 *
+* Certain syntax checked via Stackoverflow geeksforgeeks
 * Madeline Adelstone
 *
 ********************************************************************/
