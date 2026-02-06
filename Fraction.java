@@ -130,21 +130,10 @@ public class Fraction
       return new Fraction ((this.numerator / this.denominator ) * f.Reciprocol());
     }
 
-   public Fraction pow(Fraction a , Fraction b )
-    {
-       int n = b ;
-       for (int i = 1; i < n; i++)
-         {
-           multiply(Fraction a, Fraction b);
-         }
-       return a;
-    }
   public Fraction Reciprocol()
    {
       return new Fraction (denominator, numerator); 
    }
-
-
 
    
    //Main function 
