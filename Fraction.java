@@ -12,7 +12,7 @@
 *************************************************************************
 2. Declaration
 Every submission MUST INCLUDE the following header in each source code files or scripts submitted
-for assignments or projects. Please adhere to this policy.*/
+for assignments or projects. Please adhere to this policy.
 *******************************************************************
 * I declare and confirm the following:
 * - I have not discussed this program code with anyone other than my
