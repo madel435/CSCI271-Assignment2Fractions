@@ -135,7 +135,7 @@ public class Fraction
        int n = b ;
        for (int i = 1; i < n; i++)
          {
-           new Fraction = multiply(Fraction a, Fraction b);
+           multiply(Fraction a, Fraction b);
          }
        return a;
     }
