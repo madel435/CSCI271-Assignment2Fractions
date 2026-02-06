@@ -139,8 +139,8 @@ public class Fraction
    
  public Fraction pow(Fraction a , Fraction b )
     {
-      int bottom = this.numerator;
-	   int top = this.denominator;
+      int bottom = numerator;
+	   int top = denominator;
 	   long result = 1;
        
        for (int i = 1; i < bottom; i++)
