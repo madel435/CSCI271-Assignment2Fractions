@@ -105,15 +105,17 @@ public class Fraction
 
    public Fraction add(Fraction a , Fraction b )
     {
-      num = a.numerator + b.numerator;
-      return new Fraction(num,denominator);
+       long num = a.numerator + b.numerator;
+       long denom = denominator;
+       return new Fraction(num,denominator);
  
     }
   
    public Fraction subtract(Fraction a, Fraction b )
    {
-      num = a.numerator - b.numerator;
-      return new Fraction(num,denominator);
+       long num = a.numerator - b.numerator;
+       long denom = denominator;
+       return new Fraction(num,denominator);
    }
 
    public Fraction multiply(Fraction a , Fraction b )
@@ -131,7 +133,7 @@ public class Fraction
    public Fraction pow(Fraction a , Fraction b )
     {
        int n = b ;
-      for (int i = 1; i < n; i++)
+       for (int i = 1; i < n; i++)
          {
             a.multiply();
          }
