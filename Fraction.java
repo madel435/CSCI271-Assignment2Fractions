@@ -136,6 +136,10 @@ public class Fraction
          }
        return a;
     }
+  public Fraction Reciprocol()
+   {
+      return new Fraction (denominator, numerator); 
+   }
 
 
 
