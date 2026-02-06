@@ -102,6 +102,18 @@ public class Fraction
              }
           }
 
+   public Fraction multiply(Fraction a , Fraction b )
+    {
+   	 long  num = a..numerator * b.numerator ;
+ 	    long denom = a.denominator * b.denominator;
+       New Fraction(num,denom);
+    }
+
+
+
+
+
+   
    //Main function 
    public static void main(String[] args)
    {
