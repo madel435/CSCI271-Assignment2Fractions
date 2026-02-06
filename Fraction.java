@@ -105,29 +105,27 @@ public class Fraction
 
    public Fraction add(Fraction f)
     {
-       long num = a.numerator * b.denominator;
-       long denom = a.denominator * b.numerator;
-       long tempNum = num + denom; 
-       return new Fraction(tempNum);
+       long num = this.numerator * f.denominator + this.denominator * f.numerator ;
+       long denom = this.denominator * f.numerator;
+       return new Fraction(num, denom);
  
     }
   
    public Fraction subtract(Fraction f)
    {
-       long num = a.numerator * b.denominator;
-       long denom = a.denominator * b.numerator;
-       int tempNum = num - denom; 
-       return new Fraction(tempNum);
+       long num = this.numerator * f.denominator - this.denominator * f.numerator ;
+       long denom = this.denominator * f.numerator;
+       return new Fraction(num,denom );
    }
 
-   public Fraction multiply(Fraction f)
+   public Fraction multiply(Fraction f )
     {
-   	 long  num = a.numerator * b.numerator ;
- 	    long denom = a.denominator * b.denominator;
+   	 long  num = this.numerator * f.numerator ;
+ 	    long denom = this.denominator * f.denominator;
        return new Fraction(num,denom);
     }
 
-   public Fraction divide(Fraction f )
+   public Fraction divide(Fraction f)
     { 
       long num = this.numerator * f.numerator;
       long denom = this.denominator * f.denominator;
