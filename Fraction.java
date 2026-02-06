@@ -145,7 +145,7 @@ public class Fraction
        
        for (int i = 1; i < bottom; i++)
          {
-           result = multiply(bottom);
+           result = multiply(a);
          }
        return result;
     }
