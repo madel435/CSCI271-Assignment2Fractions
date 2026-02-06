@@ -103,9 +103,6 @@ public class Fraction
    //Main function 
    public static void main(String[] args)
    {
-      int i = 0;
-      for ( i = 1; i < b; i++)
-      {
          Fraction F1 = new Fraction(3,4);
          Fraction F2 = new Fraction(5,10);
          Fraction F3 = new Fraction(0,9);
@@ -119,8 +116,5 @@ public class Fraction
          System.out.println(F4.toString());
          System.out.println(F5.toString());
          System.out.println(F6.toString());
-
-        
-      }
    }
 }
